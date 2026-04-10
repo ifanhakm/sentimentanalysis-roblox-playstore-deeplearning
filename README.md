@@ -8,7 +8,7 @@ This project implements Natural Language Processing (NLP) using Deep Learning ap
 * Mitigate *overfitting* by implementing *SpatialDropout1D*, *Early Stopping*, and *Learning Rate Reduction (ReduceLROnPlateau)*.
 
 ## 📊 Dataset & Preprocessing
-The dataset consists of raw user text reviews. The data processing pipeline was intentionally streamlined to maximize Deep Learning performance and efficiency:
+The dataset consists of raw user text reviews from Google Play Store, where the user is located in Indonesia but using English to write their review. The data processing pipeline was intentionally streamlined to maximize Deep Learning performance and efficiency:
 1. **Text Cleaning:** Removed URLs, numbers, punctuation, and non-alphabetic characters using *Regex*.
 2. **Case Folding:** Converted all text to lowercase.
 3. **Automated Labeling (VADER Lexicon):** Sentiment labels (Positive/Negative/Neutral) were extracted using the *compound score* from the VADER engine to establish an objective ground truth, bypassing the inherent bias and inconsistencies often found in human-generated star ratings.
